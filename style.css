@@ -1,101 +1,38 @@
+/* ==== Global Styles ====*/
 * {
   font-family: Arial;
+/*   overflow:scroll; */
 }
 
 html {
  scroll-behavior: smooth;
 }
 
-.navbar a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  background-color: #383E4C;
-/*   overflow:hidden; */
-/*   display: block; */
-/*   display:sticky; */
-  height:80px;
-  width:100%;
-  padding:10px 0px 0px 10px;
-  position:fixed;
-  top:0;
-  z-index:999;
-  margin-top:-10px;
-  margin-left:-10px;
-}
-
-li {
-/*   background-color:#383E4C; */
-/*   list-style-position:inside; */
-  text-align:center;
-  display:inline-block;
-  position:relative;
-  border : 1px solid grey;
-  padding: 10px 15px 10px 15px;
-  margin : 0px 40px 0px -10px;
-  left:25%;
-  right:25%;
-  top:20%;
-  font-size:25px;
-  color:white;
-}
-
-li:hover, li:active, li:focus {
-  background-color:#49505F;
-}
-
-.parallax-1 {
-  background-image: url(img/cat1.jpg);
-  height:400px;
-  width:100%;
-}
-
-.parallax-1, .parallax-2, .parallax-3{
-  position:relative;
-  width:100%;
-  background-attachment:fixed;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  color:white;
-}
-
-.text_block {
-  position: absolute;
-  color : white;
-  text-align:center;
-  left:50%;
-  top:50%;
-  transform : translate(-50%, -50%);
-}
-
-h2{
+h2 {
   text-shadow:3px 3px #000000;
   margin-bottom:-40px;
+  font-size: 60px;
 }
 
-h3{
-  font-size:30px;
+h3 {
+  font-size:50px;
+  position:relative;
+  left: 15px;
 }
 
-p{
+h4 {
+  text-align: center;
+  text-shadow:1px 1px black;
+  font-size: 40px;
+}
+
+p {
   margin-left:10px;
   margin-right:20px;
   margin-bottom:60px;
-}
-
-h4{
-  text-align: center;
-  text-shadow:1px 1px black;
-}
-
-#meet_cats {
-  column-count:3;
-  column-width:33.33%;
   position:relative;
-  margin:40px;
+  left: 8px;
+  font-size: 25px;
 }
 
 .button_red, .button_green, .button_blue, .button_grey{
@@ -146,22 +83,85 @@ h4{
   border:none;
 }
 
+.parallax-1, .parallax-2, .parallax-3{
+  position:relative;
+  width:100%;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:white;
+}
+/* ==== Navigation =====*/
+
+.navbar a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #383E4C;
+/*   overflow:hidden; */
+/*   display: block; */
+/*   display:sticky; */
+  height:80px;
+  width:100%;
+  padding:10px 0px 0px 10px;
+  position:fixed;
+  top:0;
+  z-index:999;
+  margin-top:-10px;
+  margin-left:-10px;
+}
+
+li {
+/*   background-color:#383E4C; */
+/*   list-style-position:inside; */
+  text-align:center;
+  display:inline-block;
+  position:relative;
+  border : 1px solid grey;
+  padding: 10px 15px 10px 15px;
+  margin : 0px 40px 0px -10px;
+  left:25%;
+  right:25%;
+  top:20%;
+  font-size:25px;
+  color:white;
+}
+
+li:hover, li:active, li:focus {
+  background-color:#49505F;
+}
+
+/* ==== Homepage ==== */
+.parallax-1 {
+  background-image: url(img/cat1.jpg);
+  height:400px;
+  width:100%;
+}
+
+.text_block {
+  position: absolute;
+  color : white;
+  text-align:center;
+  left:50%;
+  top:50%;
+  transform : translate(-50%, -50%);
+}
+
+/* ==== Meet Cats Section ==== */
+#meet_cats {
+  column-count:3;
+  column-width:33.33%;
+  position:relative;
+  margin:40px;
+}
+
 #meet_cats div {
   background-color: #F2F2F2;
   height:auto;
   padding-bottom: 25px;
-}
-
-h3 {
-  position:relative;
-  left: 15px;
-  font-size: 40px;
-}
-
-p {
-  position:relative;
-  left: 8px;
-  font-size: 25px;
 }
 
 .column_two_way {
@@ -181,6 +181,7 @@ p {
   margin-bottom: 25px;
 }
 
+/* ==== Behavior Section ===== */
 #behavior {
   position:relative;
 }
@@ -194,8 +195,8 @@ p {
 
 .text_block2 {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  top: 30%;
+  bottom: 30%;
   left : 30%;
   right: 30%;
   color: white;
@@ -214,19 +215,6 @@ p {
   padding-bottom:50px;
 }
 
-h2 {
-  font-size: 60px;
-}
-
-h3 {
-  font-size: 50px;
-}
-
-h4 {
-  font-size: 40px;
-
-}
-
 .big_column {
   position:relative;
   background-color:#F2F2F2;
@@ -240,6 +228,8 @@ h4 {
   margin:auto;
   padding-bottom:30px;
 }
+
+/* ==== Contact Section ===== */
 
 #contact {
   margin-bottom : 20px;
@@ -297,7 +287,12 @@ h4 {
   margin-left:300px;
   margin-bottom:-10px;
   width:300px;
-} */
+}
+
+.grid2 {
+  margin-top:15px;
+}
+/* ==== The Last Section and the Footer ==== */
 
 .free h3{
   text-align:center;
@@ -312,4 +307,3 @@ footer {
   padding-top: 30px;
   text-align:center;
 }
-
