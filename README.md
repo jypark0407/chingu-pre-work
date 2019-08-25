@@ -1,2 +1,22 @@
-# chinguprework
-Building a website as a pre-work for Chingu Co-hort 11
+# Cats- Chingu Tier1 PreWork 
+#### Overview
+
+The website is a clone of the CSS template ["Conquer," ](https://www.free-css.com/free-css-templates/page196/conquer)a free bootstrap template. However, unlike the template, Bootstrap was not used in this website.
+
+
+
+#### Tools Used
+
+The website was built with vanilla HTML5, CSS3 (CSS Grid) and JavaScript, without any framework. 
+
+
+
+#### Photo Credits
+
+All the photos were taken by me. 
+
+
+
+#### Thing To Note
+
+It was done as a Tier 1 prework requirement for Chingu Cohort 11. Learn more about Chingu [here.](https://chingu.io/)
