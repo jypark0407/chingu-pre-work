@@ -1,2 +1,2 @@
-# chingu-pre-work
-Chingu Pre-Work for Cohort 11 (Tier 1)
+# chinguprework
+Building a website as a pre-work for Chingu Co-hort 11
