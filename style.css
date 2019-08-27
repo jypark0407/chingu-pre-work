@@ -1,7 +1,7 @@
 /* ==== Global Styles ====*/
 * {
   font-family: Arial;
-/*   overflow:scroll; */
+  overflow:scroll;
 }
 
 html {
@@ -270,7 +270,7 @@ li:hover, li:active, li:focus {
 }
 
 .form {
-  margin-top:-50px;
+  margin-top:-50px
 }
 
 .grid {
@@ -289,9 +289,6 @@ li:hover, li:active, li:focus {
   width:300px;
 }
 
-.grid2 {
-  margin-top:15px;
-}
 /* ==== The Last Section and the Footer ==== */
 
 .free h3{
@@ -306,4 +303,27 @@ footer {
   border-top:1px solid grey;
   padding-top: 30px;
   text-align:center;
+}
+
+/* ==== Media Query ==== */
+/* For tablet  */
+@media only screen and (max-width:700px) {
+  .navbar {
+    overflow:hidden;
+  }
+  li {
+    float:left;
+    display:block;
+    font-size;10px
+  }
+  .three_way_column {
+    width:50%;
+    font-size:20px;
+  }
+}
+
+
+/* For Mobile */
+@media only screen and (max-width:350px) {
+
 }
