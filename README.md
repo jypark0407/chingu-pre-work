@@ -7,7 +7,7 @@ The website is a clone of the CSS template ["Conquer," ](https://www.free-css.co
 
 #### Tools Used
 
-The website was built with vanilla HTML5, CSS3 (CSS Grid) and JavaScript, without any framework. 
+The website was built with vanilla HTML5 and CSS3 (CSS Grid), without any framework. Parallax effect and smooth scrolling were created using CSS, without JavaScript.
 
 
 
