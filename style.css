@@ -1,7 +1,7 @@
 /* ==== Global Styles ====*/
 * {
   font-family: Arial;
-  overflow:scroll;
+/*   overflow:none; */
 }
 
 html {
