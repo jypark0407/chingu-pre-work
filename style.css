@@ -41,9 +41,13 @@ p {
   padding:20px 30px;
   border-radius:6px;
   position:relative;
-  left:37%;
+/*   left:45%; */
+   display:block;
+   margin: 0 auto;
+  width:5em;
   margin-top:30px;
   margin-bottom:30px;
+  text-align: center;
 }
 
 .button_blue{
@@ -218,13 +222,12 @@ li:hover, li:active, li:focus {
 .big_column {
   position:relative;
   background-color:#F2F2F2;
-  margin : 30px;
 }
 
 .column-10{
   position:relative;
-  left:30px;
-  right:20px;
+/*   left:30px;
+  right:20px; */
   margin:auto;
   padding-bottom:30px;
 }
