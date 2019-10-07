@@ -1,11 +1,16 @@
 /* ==== Global Styles ====*/
 * {
   font-family: Arial;
-/*   overflow:none; */
+  overflow:none;
 }
 
 html {
  scroll-behavior: smooth;
+}
+
+img {
+  max-width:100%;
+  height:auto;
 }
 
 h2 {
@@ -310,7 +315,7 @@ footer {
 
 /* ==== Media Query ==== */
 /* For tablet  */
-@media only screen and (max-width:700px) {
+/* @media screen and (max-width:700px) {
   .navbar {
     overflow:hidden;
   }
@@ -323,11 +328,14 @@ footer {
     width:50%;
     font-size:20px;
   }
-}
+} */
 
 
 /* Media Query */
-@media only screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {  
+  img {
+    width:100%; 
+  }
   .three_way_column {
     display: grid;
     grid-template-columns: 1fr;
@@ -353,7 +361,7 @@ footer {
   }
 }
 
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .three_way_column {
     display: grid;
     grid-template-columns: 1fr;
