@@ -110,6 +110,7 @@ p {
   z-index: 99;
   display:flex;
   width: 100%;
+  border:none;
 }
 
 .navbar a {
@@ -117,8 +118,11 @@ p {
   color:white;
 }
 
+.navbar .icon {
+  display:none;
+}
+
 ul {
-  border:1px black solid;
   display:flex;
   justify-content: center;
   background-color:grey;
@@ -126,7 +130,6 @@ ul {
 
 li {
   display:inline-block;
-  border:1px black solid;
   margin : 1em;
   padding: 1em 1.5em;
  }
@@ -157,7 +160,7 @@ li:hover, li:active, li:focus {
   column-count:3;
   column-width:33.33%;
   position:relative;
-  margin:40px;
+/*   margin:40px; */
 }
 
 #meet_cats div {
@@ -188,7 +191,7 @@ li:hover, li:active, li:focus {
   background-image:url(img/cat7.jpg);
   height:500px;
   width:100%;
-  margin-bottom:50px;
+/*   margin-bottom:50px; */
 }
 
 .text_block2 {
@@ -210,7 +213,7 @@ li:hover, li:active, li:focus {
 .column_four_way div {
   background-color: #F2F2F2;
   position:relative;
-  padding-bottom:50px;
+/*   padding-bottom:50px; */
 }
 
 .big_column {
@@ -223,7 +226,7 @@ li:hover, li:active, li:focus {
 /*   left:30px;
   right:20px; */
   margin:auto;
-  padding-bottom:30px;
+/*   padding-bottom:30px; */
 }
 
 /* ==== Contact Section ===== */
@@ -231,7 +234,7 @@ li:hover, li:active, li:focus {
 #contact {
 /*   margin-bottom : 20px; */
   background-image:url(img/cat13.jpg);
-  height:600px;
+  height:auto;
   text-align:center;
 }
 
@@ -252,6 +255,7 @@ li:hover, li:active, li:focus {
 form {
   width:100%;
 }
+
 .form h1 {
   color:white;
 }
@@ -334,6 +338,31 @@ footer {
     margin: 0;
     padding: 0;
   }
+ 
+  ul {
+    display:flex;
+    background-color:grey;
+    justify-content:flex-start;
+  }
+  
+  .navbar a:not(:first-child) {
+    display:none;
+  }
+  
+  .navbar a:first-child {
+/*     border:1px black solid; */
+  }
+  
+  .navbar .icon {
+/*  float: right; */
+    border:2px black solid;
+    display:block;
+  }
+  
+  navbar a.icon {
+    float: right;
+    display: block;
+  }
   
   img {
     width:100%; 
@@ -341,15 +370,15 @@ footer {
   .three_way_column {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1em;
-    grid-row-gap: 100px;
+/*     padding: 1em; */
+/*     grid-row-gap: 100px; */
     width:100%;
   }
   
   .column_two_way {
     display:grid;
     grid-template-columns:1fr;
-    padding:1em;
+/*     padding:1em; */
     grid-row-gap: 100px;
     width:100%;
   }
@@ -357,17 +386,40 @@ footer {
   .column_four_way {
     display:grid;
     grid-template-columns:1fr 1fr;
-    padding:1em;
+/*     padding:1em; */
     grid-row-gap:100px;
     width:100%;
   }
+  
+  .canvas2 {
+    display:flex;
+    
+  }
+  
+  .canvas1 {
+    margin:0 0;
+  }
+  .canvas2 {
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .canvas2-left {
+    display:flex;
+    margin-bottom:1em;
+  }
+  
+  .canvas2-left input {
+    margin-bottom:1em;
+  }
+  
 }
 
 @media screen and (max-width:480px) {
     .three_way_column {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1em;
+/*     padding: 1em; */
     grid-row-gap: 100px;
     width:100%;
   }
@@ -375,7 +427,7 @@ footer {
   .column_two_way {
     display:grid;
     grid-template-columns:1fr;
-    padding:1em;
+/*     padding:1em; */
     grid-row-gap: 100px;
     width:100%;
   }
@@ -383,7 +435,7 @@ footer {
   .column_four_way {
     display:grid;
     grid-template-columns:1fr;
-    padding:1em;
+/*     padding:1em; */
     grid-row-gap:100px;
     width:100%;
   }
