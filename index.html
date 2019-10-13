@@ -14,20 +14,19 @@
     <script src="app.js"></script>
   </head>
   <body>
-      <!-- <ul class="navbar">
+      <ul class="navbar">
         <a href="#home"><li>Home</li></a>
         <a href="#meet_cats"><li>Meet Cats</li></a>
         <a href="#behavior"><li>Behavior</li></a>
         <a href="#contact"><li>Contact</li></a>
         <a href="https://www.youtube.com/watch?v=DXUAyRRkI6k"><li>External</li></a>
-      </ul> -->
+      </ul>
         <div class="parallax-1" id="home">
           <div class="text_block">
             <h2> Cats <h2>
-            <h4> Chingu Cohort11 PreWork </h4></div>
+            <h4> Chingu Cohort11 PreWork </h4>
+          </div>
         </div>
-      </div>
-    </div>
     <div class=three_way_column id="meet_cats">
       <div class="column-1">
         <img src="img/cat2.jpg" width=100% alt="cat">
@@ -99,25 +98,29 @@
 Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi. </p>
       <a href="#" class="button_grey"> Read More </a></div>
   </div>
-    <div id="contact">
-      <div class="wrapper">
-        <h2>Contact Form</h2>
-        <p> Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
-    felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
-    Etiam a mi quis arcu varius condimentum. </p>
-      </div>
-      <form class="form">
-          <div class="grid">
-            <div class="grid1">
-              <input class="grid-1" type=text name="name" value="Name">
-              <input class="grid-2" type=text name="email" value="Email">
-              <input class="grid-3" type=text name="subject" value="Subject"></div>
-            <div class="grid2">
-              <textarea class="text" rows="6" cols="40">Your message here...</textarea>
-              <button type="Submit"> Submit </button></div>
+  <form class="form" id="contact">
+      <div class="container">
+        <h1> Contact Form </h1>
+        <div class="canvas1">
+          <p> Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
+felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
+Etiam a mi quis arcu varius condimentum.</p>
+        </div>
+          <div class="canvas2">
+            <div class="canvas2-left">
+              <input type=text name="name" placeholder="Name">
+              <input type=text name="email" placeholder="Email">
+              <input type=text name="subject" placeholder="Subject">
+            </div>
+          <div class="canvas2-right">
+            <textarea class="text" rows="6" cols="40">Your message here...</textarea>
+            <div class="canvas2-button">
+              <button type="Submit"> Submit </button>
+            </div>
           </div>
-        </form>
-  </div>
+        </div>
+        </div>
+  </form>
   <div class="free">
     <h3> Use It Free! </h3>
     <p> This is a clone of the CSS template "Conquer," a free Bootstrap template.</p>

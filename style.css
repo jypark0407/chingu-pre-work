@@ -1,11 +1,10 @@
 /* ==== Global Styles ====*/
 * {
-  font-family: Arial;
-  overflow:none;
-}
-
-html {
  scroll-behavior: smooth;
+ font-family: Arial;
+ margin : 0;
+ padding: 0;
+ overflow-x: hidden;
 }
 
 img {
@@ -15,7 +14,7 @@ img {
 
 h2 {
   text-shadow:3px 3px #000000;
-  margin-bottom:-40px;
+/*   margin-bottom:-40px; */
   font-size: 60px;
 }
 
@@ -103,41 +102,34 @@ p {
 }
 /* ==== Navigation =====*/
 
+.navbar {
+  margin : 0;
+  padding : 0;  
+  position:fixed;
+  top: 0;
+  z-index: 99;
+  display:flex;
+  width: 100%;
+}
+
 .navbar a {
   text-decoration: none;
+  color:white;
 }
 
 ul {
-  list-style-type: none;
-  background-color: #383E4C;
-/*   overflow:hidden; */
-/*   display: block; */
-/*   display:sticky; */
-  height:80px;
-  width:100%;
-  padding:10px 0px 0px 10px;
-  position:fixed;
-  top:0;
-  z-index:999;
-  margin-top:-10px;
-  margin-left:-10px;
+  border:1px black solid;
+  display:flex;
+  justify-content: center;
+  background-color:grey;
 }
 
 li {
-/*   background-color:#383E4C; */
-/*   list-style-position:inside; */
-  text-align:center;
   display:inline-block;
-  position:relative;
-  border : 1px solid grey;
-  padding: 10px 15px 10px 15px;
-  margin : 0px 40px 0px -10px;
-  left:25%;
-  right:25%;
-  top:20%;
-  font-size:25px;
-  color:white;
-}
+  border:1px black solid;
+  margin : 1em;
+  padding: 1em 1.5em;
+ }
 
 li:hover, li:active, li:focus {
   background-color:#49505F;
@@ -148,15 +140,16 @@ li:hover, li:active, li:focus {
   background-image: url(img/cat1.jpg);
   height:400px;
   width:100%;
+  display:flex;
+  justify-content:center;
 }
 
 .text_block {
-  position: absolute;
-  color : white;
   text-align:center;
-  left:50%;
-  top:50%;
-  transform : translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  display:flex;
+  flex-direction:column;
 }
 
 /* ==== Meet Cats Section ==== */
@@ -177,10 +170,6 @@ li:hover, li:active, li:focus {
   column-count:2;
   column-width:50%;
   position:relative;
-/*   margin-top : 50px;
-  margin-left: 40px;
-  margin-right:40px;
-  padding-bottom: 10px; */
 }
 
 .column_two_way div {
@@ -240,71 +229,97 @@ li:hover, li:active, li:focus {
 /* ==== Contact Section ===== */
 
 #contact {
-  margin-bottom : 20px;
+/*   margin-bottom : 20px; */
   background-image:url(img/cat13.jpg);
   height:600px;
   text-align:center;
 }
 
-#contact button {
-  color:white;
-  padding:10px 20px;
-  border-radius:6px;
-  margin-left:10px;
-  background-color:grey;
-  font-size:17px;
-  width: 120px;
-  text-align:center;
-  margin-top:10px;
-}
-
 .wrapper h2 {
   color:white;
-  padding-top:1.5em;
+/*   padding-top:1.5em; */
 }
 
 .wrapper p {
-  max-width:700px;
   text-align:center;
-  margin-left:300px;
 }
 
 .wrapper p, input, textarea{
   background-color:rgba(242, 242, 242, 0.4);
-  padding:10px 15px 10px 15px;
   border-radius:4px;
+}
+
+form {
+  width:100%;
+}
+.form h1 {
+  color:white;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  padding-top:2em;
+  margin: 1em 5em
+}
+
+.canvas1 {
+  display:flex;
+  justify-content: center;
+  margin:0 4em;
+}
+
+.canvas1 p {
+  top: 1em;
+}
+
+.canvas2 {
+  display:flex;
+  justify-content: space-around;
+}
+
+.canvas2-left {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  flex-grow:0.5;
+}
+
+.canvas1 p, .canvas2-left input, .canvas2-right textarea {
+  border-radius : 3px;
+  background-color:rgba(242, 242, 242, 0.4);
+  color:black;
   border:none;
-  margin-top:5%;
+  padding:1em;
 }
 
-.form {
-  margin-top:-50px
+.canvas2-right {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr;
-  grid-gap:20px 50px;
-  width:700px;
-  margin-left:15px;
+.canvas2-button button {
+  background-color:grey;
+  border:none;
+  border-radius : 3px;
+  padding: 1em;
+  margin-top:1em;
+  width:50%; 
 }
-
-.grid-1, .grid-2, .grid-3 {
-  display:inline-block;
-  margin-left:300px;
-  margin-bottom:-10px;
-  width:300px;
-}
-
+  
 /* ==== The Last Section and the Footer ==== */
 
 .free h3{
   text-align:center;
+  padding-top:1em;
 }
 
 .free p{
   font-style:italic;
+  text-align:center;
+  margin-top:1em;
 }
 
 footer {
@@ -313,26 +328,13 @@ footer {
   text-align:center;
 }
 
-/* ==== Media Query ==== */
-/* For tablet  */
-/* @media screen and (max-width:700px) {
-  .navbar {
-    overflow:hidden;
-  }
-  li {
-    float:left;
-    display:block;
-    font-size;10px
-  }
-  .three_way_column {
-    width:50%;
-    font-size:20px;
-  }
-} */
-
-
 /* Media Query */
 @media screen and (max-width: 768px) {  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
   img {
     width:100%; 
   }
